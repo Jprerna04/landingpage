@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt</title>
+    <style>
+      body {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: bisque;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid bisque;
+        line-height: 5px;
+        font-size: 20px;
+        padding: 13px;
+        border-radius: 5px;
+        background-color: bisque;
+        font-weight: 650;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        max-width: 100%;
+        height: 350px;
+      }
+      p {
+        line-height: 1.4;
+        margin: 20px 0 10px;
+        font-size: 19px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: bisque;
+      }
+      .extra {
+        text-decoration: none;
+        color: antiquewhite;
+        font-size: 16px;
+      }
+      .extra:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 18px 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: black;
+        background-color: bisque;
+        transition: 100ms all ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .last {
+        text-align: center;
+        padding: 10px;
+      }
+      .main {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px 80px;
+        border: 1px solid;
+        border: none;
+        background: radial-gradient(
+          780px at 37.8% 100.3%,
+          rgb(19, 55, 115) 2.2%,
+          rgb(32, 7, 80) 20.2%,
+          rgb(27, 88, 111) 58.6%,
+          rgb(115, 88, 44) 75%,
+          rgb(99, 19, 90) 89.6%,
+          rgb(12, 51, 76) 96.1%
+        );
+        border-radius: 20px;
+      }
+      .me {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>I love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/544/original/image.jpg?1692913066"
+        ;
+        alt=""
+      />
+      <p>
+        Strained yogurt, Greek yogurt, yogurt cheese, or sack yoghurt is yogurt
+        that has been strained to remove most of its whey, resulting in a
+        thicker consistency than unstrained yogurt, while preserving yogurt's
+        distinctive sour taste.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Strained_yogurt"
+          target="_blank"
+          class="extra"
+          ><strong>Learn more on wikipedia</strong></a
+        >
+      </p>
+      <br />
+      <button>👉<strong>Buy Greek Yogurt</strong>👈</button>
+      <br />
+      <br />
+      <hr />
+      <p class="last">
+        This page was build by
+        <a
+          href="https://www.linkedin.com/in/prerna-jha-6080a9253/"
+          target="_blank"
+          class="me"
+          >Prerna Jha</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email-id?");
+        let emoji = prompt("What is your favourite emoji?");
+        alert(
+          "Thankyou " +
+            name +
+            "! We'll be in touch via email. In the meantime have a lot of yogurt!! " +
+            emoji
+        );
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
